@@ -1,0 +1,29 @@
+.bx-auth-note{
+  font-size: 20px;
+  line-height: 60px;
+}
+
+.bx-auth{
+    input{
+      margin:10px 0;
+      height: 30px;
+      border: 2px solid #314f55;
+      width: 100%;
+
+    }
+  label{
+    float: left;
+  }
+  input.checkbox{
+    float: left;
+  }
+    .btn.btn-primary{
+      margin:10px 0;
+      height: auto;
+      background-color:#314f55;
+      width: 100%;
+      line-height: 40px;
+      border: none;
+      color: #FFFFFF;
+    }
+}

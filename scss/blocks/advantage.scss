@@ -1,0 +1,91 @@
+.advantage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+  .logo-advantage {
+    width: 49%;
+    text-align: center;
+    ul {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      li {
+        margin: 0 15px;
+        a {
+          display: flex;
+          height: 30px;
+          align-items: center;
+          padding: 10px 10px;
+          background-color: $site-color2;
+          text-decoration: none;
+          &:hover {
+            color: $site-color;
+          }
+        }
+      }
+    }
+  }
+
+
+  .info-advantage {
+    width: 49%;
+  }
+
+  .article-advantage{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    h2{
+      width: 100%;
+    }
+    article {
+      width: 50%;
+      margin:15px 0;
+      display: flex;
+      .icon-advantage{
+        svg{
+          width: 70px;
+          height: 70px;
+          fill: #2ec500;
+        }
+      }
+      .date-advantage {
+        padding-left: 20px;
+        h2{
+          font-size: 16px;
+        }
+      }
+    }
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 787px) {
+.article-advantage{
+  article{
+    width: 100% !important;
+  }
+}
+  .advantage {
+    .logo-advantage, .info-advantage{
+      width: 100% !important;
+    }
+    .logo-advantage{
+      svg{
+        width: 200px;
+        height: 200px;
+      }
+      p{
+        font-size: 60px;
+      }
+      ul{
+        flex-direction: column;
+        li{
+          margin: 5px 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

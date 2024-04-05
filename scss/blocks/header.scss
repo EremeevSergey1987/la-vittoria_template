@@ -1,0 +1,378 @@
+.menu{
+  a{
+    line-height: 25px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding: 19px;
+    display: block;
+    margin:0;
+    color: white;
+    &:hover{
+      color: white;
+    }
+  }
+  a.selected{
+    background-color: $site-color;
+  }
+}
+.burger{
+  span{
+    display: block;
+    width: 40px !important;
+    height: 3px !important;
+    background-color: $site-color;
+    margin-bottom: 6px;
+  }
+}
+.exit-menu{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  svg{
+    fill:$site-color !important;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 15px;
+    left: 16px;
+  }
+}
+.logo-sm{
+  display: none;
+}
+.logo-xs{
+  a{
+    height: 60px;
+  }
+  svg{
+    display: block;
+    fill:$site-color !important;
+    width: 250px;
+    height: 60px;
+    position: absolute;
+    top:0;
+    left: 10px;
+  }
+  a{
+    margin-left: 60px !important;
+    p{
+      span{
+        background-color: transparent !important;
+        color: $site-color !important;
+        font-size: 15px !important;
+        padding: 0 !important;
+      }
+    }
+  }
+}
+header{
+  background-color: $top_menu_color;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  .telephone{
+    display: flex;
+    a{
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .search{
+    display: flex;
+    form{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 14px;
+      input{
+        background-color:transparent;
+        width: 50px;
+        height: 28px;
+        border:1px solid transparent;
+        border-bottom:1px solid $site-color;
+      }
+      button{
+        border: none;
+        background-color: transparent;
+      }
+      svg {
+        width: 40px;
+        height: 30px;
+        fill: $site-color;
+        margin-top: 10px;
+      }
+    }
+  }
+  .enter{
+    border-left: 1px solid silver;
+    padding-left: 5px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 64px;
+    .ent{
+      text-decoration: none;
+      color: white;
+    }
+      svg {
+        margin: 10px 0 0 5px;
+        width: 40px;
+        height: 40px;
+        fill: $site-color;
+      }
+    }
+
+  .burger{
+    display: none;
+  }
+
+  .burger:hover{
+    color: $site-color;
+  }
+
+  .top__right{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    .open-popup-link{
+    }
+    a{
+      display: flex;
+      font-size: 14px;
+      line-height: 23px;
+      color: $black;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+
+      svg{
+        fill: $site-color;
+        width: 50px;
+        height: 50px;
+      }
+      p{
+        font-size: 16px;
+        text-align: center;
+        color: white;
+        margin-left: -49px;
+        padding-top: 15px;
+        width: 50px;
+        height: 35px;
+      }
+    }
+
+
+  }
+  .top__catalog{
+    width: 50%;
+    display: flex;
+    .knop{
+      background-color: #e5e5e5;
+      font-weight: bold;
+      color: $top_menu_color;
+      &:hover{
+        background-color: $site-color;
+      }
+      span{
+        width: 40px;
+        height: 4px;
+        background-color: $site-color;
+      }
+    }
+    ul.top__menu{
+      display: flex;
+      li:hover{
+        background-color: $site-color;
+      }
+    }
+    margin:0 !important;
+    text-align: center;
+  }
+}
+
+.block_cat{
+  background-color: white;
+  display: none;
+  width: 75%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  position: fixed;
+  border: 3px solid $site-color;
+  margin:64px 0;
+  li{
+    a{
+      background-color: $gray;
+      line-height: 18px;
+      padding: 5px 0 5px 8px;
+      margin: 8px 8px 5px 8px;
+      span{
+        padding: 8px 8px;
+        font-size: 12px;
+        color: white;
+        background-color: $site-color;
+      }
+      color: $slider-text;
+      &:hover{
+        color: $site-color;
+      }
+
+    }
+    ul{
+      background-color: #fff;
+      position: absolute;
+      border: 3px solid $site-color;
+      li{
+        text-align:left;
+        a{
+          position: relative;
+          padding-right: 50px;
+          span{
+            padding: 6px 8px;
+            position: absolute;
+            right: 0;
+            top:0;
+          }
+        }
+      }
+    }
+
+    .search_xs{
+      border-top: 1px solid silver;
+      padding: 8px 8px 1px 8px;
+      display: flex;
+      input{
+        height:30px;
+      }
+      button{
+        border: none;
+        background-color: transparent;
+      }
+
+        svg{
+          fill: $site-color;
+          width: 55px;
+          height: 36px;
+        }
+
+    }
+  }
+}
+.search_xs_li{
+  width: 100%;
+}
+.top__left{
+  display: flex;
+  align-items: center;
+  svg{
+    fill: $site-color;
+    height: 20px;
+    width: 250px;
+  }
+}
+
+.banner_link{
+  text-decoration: none;
+}
+.banner__n2{
+  text-align: center;
+  background-color: $header_text_color;
+  width: 100%;
+  padding: 60px 0;
+  margin-top: 20px;
+  p{
+    font-size: 30px;
+    line-height: 40px;
+    color: white;
+  }
+}
+
+
+
+@media (max-width: 1335px){
+  header{
+    .top__catalog{
+      width: auto;
+    }
+  }
+  .telephone, .logo
+  p{
+    display: none !important;
+  }
+}
+@media (max-width: 1167px){
+  .enter, .top__catalog, .top__menu{
+    display: none !important;
+  }
+  .top__left{
+    svg{
+      width: 80px;
+    }
+  }
+  .logo-big{
+    display: none;
+  }
+  .logo-sm{
+    display: block;
+  }
+
+  .block_cat {
+    height: 100vh;
+    width: 100%;
+    border: none;
+    background-color: #fcf3f2;
+    left: 0;
+    top: 0;
+    overflow: scroll;
+    margin-top: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 0px;
+    li{
+      a{
+        background-color: transparent;
+        font-weight: bold;
+      }
+      ul{
+        width: 100%;
+        border: none;
+        position: relative;
+        li{
+          a{
+            background-color: $site-color2;
+            font-weight: normal;
+          }
+          ul{
+            li{
+              a{
+                background-color: #e7e7e7;
+                padding-left: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .burger{
+    display: block !important;
+  }
+}
+@media (max-width: 489px){
+  .enter{
+    display: none !important;
+  }
+}
+@media (max-width: 389px){
+  .search{
+    display: none !important;
+  }
+}

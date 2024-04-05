@@ -1,0 +1,174 @@
+.bx-filter-parameters-box.filter__parameters.active{
+  background-color: $site-color;
+  padding: 0 10px;
+  a{
+    color: #FFFFFF;
+  }
+}
+.filter{
+  &.fixtop{
+    position: fixed;
+    top: 64px;
+    z-index: 2;
+    width: 100%;
+    background-color: #FFF;
+    padding-top: 3px !important;
+    padding-bottom: 5px !important;
+    opacity: 0.9;
+    .bx-filter-block{
+      margin-top: 6px !important;
+    }
+  }
+  border-bottom: 1px solid $site-color;
+    .smartfilter{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .bx-filter-parameters-box{
+        //border: 1px solid orangered;
+      }
+      .filter__link{
+        line-height: 40px;
+        color: $top_menu_color;
+        svg{
+          width: 20px;
+          height: 8px;
+        }
+      }
+      .btn_filter{
+        button{
+          background-color: $top_menu_color;
+          height: 40px;
+          border: none;
+          color: #FFFFFF;
+        }
+        button:hover{
+          background-color: $site-color;
+        }
+      }
+    }
+}
+
+
+.bx-filter-block{
+  display: none;
+  z-index: 3;
+  position: fixed;
+  background-color: #FFFFFF;
+  border: 1px solid $top_menu_color;
+  max-height: 300px;
+  overflow: scroll;
+  padding: 5px;
+  overflow-x:hidden;  /*для горизонтального*/
+  ul{
+    li{
+      display: flex;
+      justify-content: left;
+      flex-wrap: wrap;
+      align-items: center;
+      span.color{
+        margin: 3px 3px 3px 0;
+        display: block;
+        width: 30px;
+        height: 30px;
+        border: 1px solid silver;
+
+      }
+      .color_346790{
+        background-color: #9b2d30;
+      }
+      .color_346788{
+        background-color: #f5f5dc;
+      }
+      .color_346789{
+        background-color: #42aaff;
+      }
+      .color_346785{
+        background-color: #008000;
+      }
+      .color_346787{
+        background-color: #964b00;
+      }
+      .color_346784{
+        background-color: #ffc0cb;
+      }
+      .color_346783{
+        background-color: #808080;
+      }
+      .color_346782{
+        background-color: #393991;
+      }
+      .color_349548{
+        background-color: #806b2a;
+      }
+      .color_346781{
+        background-color: #000000;
+      }
+      .color_347600{
+        background-color: #8b00ff;
+      }
+      .color_349546{
+        background-color: #ffa500;
+      }
+      .color_346786{
+        background-color: #f00;
+      }
+      .color_346791{
+        background: linear-gradient(0deg, #020024 0%, #790974 0%, #00d4ff 100%);
+      }
+      .color_349544{
+        background-color: #ff7f50;
+      }
+    }
+  }
+
+}
+
+@media(max-width: 1012px){
+  .filter{
+    &.fixtop{
+      position: relative;
+      margin-top: 0!important;
+      top:0;
+    }
+
+    border-bottom:none;
+    .smartfilter{
+      margin-top:10px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: column;
+      .bx-filter-parameters-box{
+        background-color: #F0F0EE;
+        margin: 2px 0;
+        padding-left: 10px;
+      }
+      .filter__link{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        svg{
+          width: 40px;
+        }
+      }
+      .btn_filter{
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+
+  }
+  .bx-filter-block{
+    display: none;
+    z-index: 3;
+    position: relative;
+    background-color: #fdfdfd;
+    border: none;
+    max-height: none;
+    margin-left: -10px;
+    padding: 5px;
+    overflow-x:hidden;  /*для горизонтального*/
+  }
+
+}

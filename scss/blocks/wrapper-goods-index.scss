@@ -1,0 +1,22 @@
+.wrapper-goods-index{
+  background-color: #fcf3f2;
+  .wrap.content{
+    .goods{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      justify-content: space-between;
+      h2.or_color{
+        margin-bottom: 20px;
+      }
+      .item{
+        margin-left: -10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

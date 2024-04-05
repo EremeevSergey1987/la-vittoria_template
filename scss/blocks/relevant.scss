@@ -1,0 +1,44 @@
+.relevant{
+  width: 100%;
+  background-color: $site-color;
+  .wrap-relevant{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 320px;
+    padding-bottom: 30px;
+    div{
+      margin: 0 15px;
+      text-align: center;
+      a{
+        text-decoration: none;
+      }
+      p{
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+  h2{
+    width: 100%;
+    margin:15px 0 15px 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .relevant{
+      .wrap-relevant{
+      justify-content: center;
+    }
+  }
+}

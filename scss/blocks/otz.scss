@@ -1,0 +1,28 @@
+.otz{
+  border-bottom: 1px solid silver;
+  padding:5px 0;
+  p.author{
+    font-weight: bold;
+  }
+  p.date{
+    font-size: 11px;
+    color: #a1a1a1;
+  }
+}
+.form-rew{
+  padding-top:30px;
+  input{
+    width: 100%;
+    height: 25px;
+    border: 1px solid gray;
+    margin-bottom: 30px;
+  }
+  textarea{
+    width: 100%;
+    height: 100px;
+  }
+  .btn-otz{
+    width: 100%;
+    color: #314f55;
+  }
+}

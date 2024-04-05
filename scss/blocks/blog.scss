@@ -1,0 +1,13 @@
+.blog_wrapper{
+  h1{
+    width: 100%;
+  }
+  article{
+    margin-bottom: 50px;
+    &a{
+      h3{
+        line-height: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@charset "UTF-8";
+body{
+  font-family: 'Geometria';
+}
+
+::-webkit-scrollbar{
+  width: 11px;
+}
+::-webkit-scrollbar-track{
+  background: #fbfdff;
+}
+::-webkit-scrollbar-thumb{
+  background: $top_menu_color;
+  //border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover{
+  background: $site-color;
+}
+
+
+.container {
+  @include min-max(320px, 100%, 0);
+  height: 200px;
+  background-color: $site-color;
+}
+.wrap {
+  @include min-max(320px, 1200px, 15px);
+}
+//img{
+//  width: 100%;
+//  height: auto;
+//}
+p {
+  color: $paragraph_text_color;
+  line-height: 25px;
+}
+h1{
+  font-size: 45px;
+  line-height: 45px;
+  margin-bottom: 30px;
+  color: $header_text_color;
+}
+h2{
+  font-size: 22px;
+  color: $header_text_color;
+}
+h4{
+  color: $header_text_color;
+}
+a{
+  color: #3d3d3d;
+}
+@media (max-width: 1170px) {
+  .wrap {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  h1{
+    font-size: 35px;
+  }
+}
+@media (max-width: 500px) {
+  h1{
+    font-size: 25px;
+    line-height: 25px;
+  }
+  h2{
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 350px) {
+  h1{
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

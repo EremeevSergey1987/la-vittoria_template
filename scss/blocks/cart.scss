@@ -1,0 +1,29 @@
+.form-control {
+  width: 99%;
+  height: 34px;
+  padding-left: 1%;
+  font-size: 14px;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.control-label{
+  color:black;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 30px 0 5px 0;
+  display: block;
+}
+.btn-finish{
+  @include btn();
+  margin-bottom: 0;
+  width: 200px;
+}
+.help-block{
+  margin-top: 15px;
+  color: red;
+}
+
