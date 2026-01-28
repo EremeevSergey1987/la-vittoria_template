@@ -15,13 +15,36 @@
     background-color: $site-color;
   }
 }
+.pizdec{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  position: relative;
+}
+a{
+  padding-left: 0;
+}
 .burger{
-  span{
+  svg{
+    width: 20px;
+    height: 20px;
+    fill: white;
+    position: absolute;
+    top: 21px;
+    left: 30px;
+  }
+
+  span.burger_icon{
     display: block;
-    width: 40px !important;
-    height: 3px !important;
-    background-color: $site-color;
-    margin-bottom: 6px;
+    width: 10px;
+    height: 10px;
+
+  }
+  span.catalog2026{
+    display: block;
+
   }
 }
 .exit-menu{
@@ -93,22 +116,27 @@ header{
       flex-wrap: wrap;
       align-items: center;
       font-size: 14px;
+      border:1px solid $site-color;
+      border-radius: 5px;
+      padding-left: 5px;
       input{
         background-color:transparent;
         width: 50px;
         height: 28px;
         border:1px solid transparent;
-        border-bottom:1px solid $site-color;
+
       }
       button{
         border: none;
         background-color: transparent;
+
       }
       svg {
         width: 40px;
         height: 30px;
         fill: $site-color;
         margin-top: 10px;
+        margin-right: -10px;
       }
     }
   }
@@ -155,16 +183,15 @@ header{
 
       svg{
         fill: $site-color;
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
+        margin: 0 10px;
       }
       p{
         font-size: 16px;
         text-align: center;
         color: white;
-        margin-left: -49px;
-        padding-top: 15px;
-        width: 50px;
+        padding-top: 11px;
         height: 35px;
       }
     }
@@ -309,6 +336,9 @@ header{
   }
 }
 @media (max-width: 1167px){
+  .top__left{
+    display: none;
+  }
   .enter, .top__catalog, .top__menu{
     display: none !important;
   }
