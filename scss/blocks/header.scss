@@ -30,7 +30,7 @@ a{
   svg{
     width: 20px;
     height: 20px;
-    fill: white;
+    fill: $site-color;
     position: absolute;
     top: 21px;
     left: 30px;
@@ -58,8 +58,8 @@ a{
     width: 23px;
     height: 23px;
     position: absolute;
-    top: 15px;
-    left: 16px;
+    top: 19px;
+    left: 15px;
   }
 }
 .logo-sm{
@@ -67,7 +67,7 @@ a{
 }
 .logo-xs{
   a{
-    height: 60px;
+    height: 20px;
   }
   svg{
     display: block;
@@ -76,7 +76,7 @@ a{
     height: 60px;
     position: absolute;
     top:0;
-    left: 10px;
+    left: 15px;
   }
   a{
     margin-left: 60px !important;
@@ -102,7 +102,7 @@ header{
   flex-wrap: wrap;
   align-items: center;
   .telephone{
-    display: flex;
+    display: none;
     a{
       color: white;
       text-decoration: none;
@@ -124,7 +124,6 @@ header{
         width: 50px;
         height: 28px;
         border:1px solid transparent;
-
       }
       button{
         border: none;
@@ -180,7 +179,6 @@ header{
       color: $black;
       text-decoration: none;
       border-bottom: 1px solid transparent;
-
       svg{
         fill: $site-color;
         width: 35px;
@@ -238,8 +236,7 @@ header{
   li{
     a{
       background-color: $gray;
-      line-height: 18px;
-      padding: 5px 0 5px 8px;
+      padding: 6px 0 5px 8px;
       margin: 8px 8px 5px 8px;
       span{
         padding: 8px 8px;
@@ -274,7 +271,7 @@ header{
 
     .search_xs{
       border-top: 1px solid silver;
-      padding: 8px 8px 1px 8px;
+      padding: 17px 8px 1px 8px;
       display: flex;
       input{
         height:30px;
@@ -295,6 +292,8 @@ header{
 }
 .search_xs_li{
   width: 100%;
+  margin-bottom: 30px;
+
 }
 .top__left{
   display: flex;
@@ -335,7 +334,7 @@ header{
     display: none !important;
   }
 }
-@media (max-width: 1167px){
+@media (max-width: 1270px){
   .top__left{
     display: none;
   }
@@ -357,15 +356,14 @@ header{
   .block_cat {
     height: 100vh;
     width: 100%;
-    border: none;
-    background-color: #fcf3f2;
+    border:0 transparent;
+
     left: 0;
     top: 0;
     overflow: scroll;
     margin-top: auto;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin-left: 0px;
     li{
       a{
         background-color: transparent;
@@ -401,7 +399,7 @@ header{
     display: none !important;
   }
 }
-@media (max-width: 389px){
+@media (max-width: 415px){
   .search{
     display: none !important;
   }
