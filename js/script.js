@@ -12,11 +12,11 @@ $(document).ready(function () {
                 el = $('.block_cat.'+link);
             if(el.css("display") == "none"){
                 res.hide();
-                el.fadeIn(100);
+                el.fadeIn(200);
                 el.css('display', 'flex');
             }
             else{
-                el.fadeOut(100);
+                el.fadeOut(200);
             }
             return false;
         }
