@@ -52,7 +52,7 @@ a{
   height: 60px;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 50px;
   svg{
     fill:$site-color !important;
     width: 23px;
@@ -291,7 +291,7 @@ header{
   }
 }
 .search_xs_li{
-  width: 100%;
+  width: 85%;
   margin-bottom: 30px;
 
 }
@@ -357,14 +357,16 @@ header{
     height: 100vh;
     width: 100%;
     border:0 transparent;
-
     left: 0;
     top: 0;
     overflow: scroll;
     margin-top: auto;
     flex-direction: column;
     flex-wrap: nowrap;
+    padding:0 30px;
     li{
+
+
       a{
         background-color: transparent;
         font-weight: bold;
@@ -375,14 +377,17 @@ header{
         position: relative;
         li{
           a{
-            background-color: $site-color2;
+
             font-weight: normal;
+            span{
+              display: none;
+            }
           }
           ul{
             li{
               a{
                 background-color: #e7e7e7;
-                padding-left: 30px;
+
               }
             }
           }
