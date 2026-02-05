@@ -52,7 +52,7 @@ a{
   height: 60px;
   position: absolute;
   top: 0;
-  right: 50px;
+  right: 13%;
   svg{
     fill:$site-color !important;
     width: 23px;
@@ -363,7 +363,7 @@ header{
     margin-top: auto;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding:0 30px;
+    padding:0 8%;
     li{
 
 
@@ -376,6 +376,7 @@ header{
         border: none;
         position: relative;
         li{
+          width: 92%;
           a{
 
             font-weight: normal;
