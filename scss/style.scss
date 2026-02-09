@@ -19,18 +19,18 @@
 
 
 //Вспомогательные странички
-@charset "UTF-8";
-@import "founts";
-@import "reset";
-@import "variables";
-@import "mixins";
-@import "core";
-@import "blocks/header";
-@import "blocks/footer";
-@import "blocks/pages";
-@import "blocks/shops";
-@import "blocks/blog_index";
-@import "blocks/auth";
+//@charset "UTF-8";
+//@import "founts";
+//@import "reset";
+//@import "variables";
+//@import "mixins";
+//@import "core";
+//@import "blocks/header";
+//@import "blocks/footer";
+//@import "blocks/pages";
+//@import "blocks/shops";
+//@import "blocks/blog_index";
+//@import "blocks/auth";
 //Вспомогательные странички
 
 // Категория
@@ -85,4 +85,27 @@
 //@import "blocks/slider-item";
 //@import "blocks/wrapper-goods-index";
 // товар
+
+
+//Все вместе
+@charset "UTF-8";
+@import "founts";
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "core";
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/pages";
+@import "blocks/shops";
+@import "blocks/blog_index";
+@import "blocks/auth";
+
+@import "blocks/slider";
+@import "blocks/advantage";
+@import "blocks/items_with_slider";
+@import "blocks/goods";
+@import "blocks/relevant";
+@import "blocks/categories";
+//Все вместе
 
