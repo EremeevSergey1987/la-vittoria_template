@@ -13,20 +13,21 @@
 </head>
 <body>
 
+
+
 <header>
     <div class="top__left logo">
         <a href="/" class="logo-big"><svg><use xlink:href="img/symbol/sprite.svg#icons--logo"/></svg></a>
         <a href="/" class="logo-sm"><svg><use xlink:href="img/symbol/sprite.svg#icons--logo-sm"/></svg></a>
     </div>
-
     <nav class="top__catalog menu">
         <a href="#" rel='m1' class="knop k1">Каталог</a>
         <ul class="block_cat m1 catalog">
             <li id="bx_1847241719_411"><a class="pred" href="/catalog/sale/">РАСПРОДАЖА <span>1349</span></a></li>
             <li id="bx_1847241719_471"><a href="/catalog/pidzhaki_po_999_rub/">Пиджаки по 999 руб. <span>34</span></a></li>
             <li id="bx_1847241719_406">
-                <a href="/catalog/platya/">Платья  <span>2370</span></a>
-                <ul class="submenu">
+                <a class="catalog" href="/catalog/platya/">Платья  <span>2370</span></a>
+                <ul>
                     <li id="bx_1847241719_433"><a href="/catalog/vechernie_platya/">Вечерние платья <span>24</span></a></li>
                     <li id="bx_1847241719_441"><a href="/catalog/kokteylnye_platya/">Коктейльные платья <span>65</span></a>
                     </li>
@@ -172,14 +173,18 @@
             <li class="menu__item"><a class="menu__link" href="/shops/">Наши магазины</a></li>
             <li class="menu__item"><a class="menu__link" href="/delivery/">Доставка</a></li>
             <li class="menu__item"><a class="menu__link" href="/contacts/">Контакты</a></li>
-            <li class="menu__item"><a class="menu__link" href="/otzyvy/">Отзывы</a></li>
+            <li class="menu__item"><a class="menu__link selected" href="/otzyvy/">Отзывы</a></li>
             <li class="menu__item"><a class="menu__link" href="/blog/">Блог</a></li>
         </ul>
     </nav>
-
-
-    <div class="top__right"><a class="open-popup-link" href="#"><svg><use xlink:href="img/symbol/sprite.svg#icons--icon-cart" /></svg><p>1</p></a></div>
-
+    <div class="top__right">
+        <a class="open-popup-link" href="#">
+            <svg>
+                <use xlink:href="img/symbol/sprite.svg#icons--Cart2026" />
+            </svg>
+            <p>(99)Корзина</p>
+        </a>
+    </div>
     <div class="telephone"><a href="tel:+73952500014">8 (3952) 50-00-14</a></div>
     <div class="search">
         <form>
@@ -194,25 +199,33 @@
         <a href="" class="ent">Вход</a>
         <a href=""><svg><use xlink:href="img/symbol/sprite.svg#icons--dor" /></svg></a>
     </div>
-
-
-
     <nav class="menu">
-        <a href="#" rel='m1' class="burger knop k1"><span></span><span></span><span></span></a>
-        <ul class="block_cat m1 catalog">
+        <div class="pizdec">
+            <a href="#" rel='m1' class="burger k1">
+                <svg><use xlink:href="img/symbol/sprite.svg#icons--burger2026" /></svg>
+            </a>
+
+            <a href="#" rel='m1' class="burger k1">
+                <span class="catalog2026">Каталог</span>
+            </a>
+        </div>
+        <ul class="block_cat m1">
             <li class="exit-menu">
                 <a href="#" rel='m1'>
                     <svg><use xlink:href="/img/symbol/sprite.svg#icons--close" /></svg>
                 </a>
             </li>
             <li class="logo-xs"><a href="/"><svg><use xlink:href="img/symbol/sprite.svg#icons--logo-b" /></svg></a></li>
-            <li class=""><a href="#">Каталог</a>
-                <ul>
+
+            <li><a href="#">Главная</a></li>
+
+            <li><a href="#">Каталог</a>
+                <ul class="catalog">
                     <li id="bx_1847241719_411"><a class="pred" href="/catalog/sale/">РАСПРОДАЖА <span>1349</span></a></li>
                     <li id="bx_1847241719_471"><a href="/catalog/pidzhaki_po_999_rub/">Пиджаки по 999 руб. <span>34</span></a></li>
                     <li id="bx_1847241719_406">
-                        <a href="/catalog/platya/">Платья  <span>2370</span></a>
-                        <ul class="submenu">
+                        <a class="catalog" href="/catalog/platya/">Платья <span>2370</span></a>
+                        <ul>
                             <li id="bx_1847241719_433"><a href="/catalog/vechernie_platya/">Вечерние платья <span>24</span></a></li>
                             <li id="bx_1847241719_441"><a href="/catalog/kokteylnye_platya/">Коктейльные платья <span>65</span></a>
                             </li>
@@ -362,6 +375,7 @@
             <li><a href="">Отзывы</a></li>
             <li><a href="">Личный кабинет</a></li>
             <li><a href="">Вход на сайт</a></li>
+
             <li class="search_xs_li">
                 <form class="search_xs">
                     <input placeholder="Поиск" />
@@ -373,10 +387,9 @@
 
 
             </li>
+
         </ul>
     </nav>
-
-
 </header>
 
 
