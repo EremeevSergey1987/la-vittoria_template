@@ -1,3 +1,10 @@
+.wrapper-goods-index{
+  .goods{
+    h2{
+      margin-bottom: 25px;
+    }
+  }
+}
 .first{
   margin-top: 20px;
   .item{
@@ -27,7 +34,7 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
+    align-content: flex-start;
     ul{
       display: flex;
       li{
@@ -47,7 +54,8 @@
       }
       span{
         font-size: 25px;
-        color: $site-color;
+        color: black;
+        font-weight: bold;
       }
     }
     h2 a{
@@ -55,16 +63,14 @@
       text-decoration: none;
       text-transform: capitalize;
       display: block;
-      margin-top: 10px;
     }
   }
 
   h2{
     color: #3f5053;
     overflow: hidden;
-    height: 40px;
+    margin-bottom: 20px;
     width: 100%;
-
     font-size: 24px;
     font-weight: bold;
   }
@@ -125,6 +131,22 @@
       margin-bottom: 20px !important;
       img{
         width: 100%;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 692px) {
+  .first{
+    .item {
+      .price{
+        span{
+          font-size: 18px;
+        }
+        span.through{
+          font-size: 12px;
+        }
       }
     }
   }

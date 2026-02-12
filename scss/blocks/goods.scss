@@ -11,7 +11,6 @@
   h3{
     font-size: 16px;
     color: #3f5053;
-    margin-bottom: 30px;
     overflow: hidden;
 
   }
@@ -41,7 +40,7 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
+    align-content: flex-start;
     ul{
       display: flex;
       li{
@@ -61,15 +60,14 @@
       }
       span{
         font-size: 25px;
-        color: $site-color;
+        font-weight: bold;
+        color: black;
       }
     }
     h2 a{
       font-size: 16px;
       text-decoration: none;
       display: block;
-      line-height: 30px;
-
     }
   }
   .item > a > img {
@@ -170,6 +168,21 @@ ul{
         a{
           width: 35px;
           height: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 692px) {
+  .goods{
+    .item {
+      .price{
+        span{
+          font-size: 18px;
+        }
+        span.through{
+          font-size: 12px;
         }
       }
     }
