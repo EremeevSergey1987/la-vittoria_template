@@ -1,73 +1,4 @@
 @charset "UTF-8";
-
-//Стили для главной главной
-//@import "founts";
-//@import "reset";
-//@import "variables";
-//@import "mixins";
-//@import "core";
-//@import "blocks/header";
-//@import "blocks/footer";
-//@import "blocks/goods";
-//@import "blocks/slider";
-//@import "blocks/advantage";
-//@import "blocks/blog_index";
-//@import "blocks/items_with_slider";
-//@import "blocks/relevant";
-//@import "blocks/categories";
-//Стили для главной главной
-
-
-
-//Вспомогательные странички
-//@import "founts";
-//@import "reset";
-//@import "variables";
-//@import "mixins";
-//@import "core";
-//@import "blocks/header";
-//@import "blocks/footer";
-//@import "blocks/pages";
-//@import "blocks/shops";
-//@import "blocks/blog_index";
-//@import "blocks/auth";
-//Вспомогательные странички
-
-// Категория
-//@import "founts";
-//@import "reset";
-//@import "variables";
-//@import "mixins";
-//@import "core";
-//@import "blocks/header";
-//@import "blocks/footer";
-//@import "blocks/pages";
-//@import "blocks/goods_cat";
-//@import "blocks/filter";
-//@import "blocks/slider-items";
-//@import "blocks/categories";
-//@import "blocks/pagination";
-//@import "blocks/admin";
-// Категория
-
-//Блог
-//@import "founts";
-//@import "reset";
-//@import "variables";
-//@import "mixins";
-//@import "core";
-//@import "blocks/header";
-//@import "blocks/footer";
-//@import "blocks/blog_index";
-//@import "blocks/pages";
-////Блог
-
-
-////Отзывы
-//@import "blocks/otz";
-//Отзывы
-
-// товар
 @import "founts";
 @import "reset";
 @import "variables";
@@ -75,41 +6,52 @@
 @import "core";
 @import "blocks/header";
 @import "blocks/footer";
-@import "blocks/pages";
-@import "blocks/item";
-@import "blocks/goods_cat";
-@import "blocks/slider-item";
-@import "blocks/wrapper-goods-index";
-// товар
 
-//Все вместе
-//@import "founts";
-//@import "reset";
-//@import "variables";
-//@import "mixins";
-//@import "core";
-//@import "blocks/header";
-//@import "blocks/footer";
+//Стили для главной главной
+//@import "blocks/goods";
+//@import "blocks/slider";
+//@import "blocks/advantage";
+//@import "blocks/blog_index";
+//@import "blocks/items_with_slider";
+//@import "blocks/relevant";
+//@import "blocks/categories";
+//Стили для главной главной
+
+//Вспомогательные странички
 //@import "blocks/pages";
 //@import "blocks/shops";
 //@import "blocks/blog_index";
 //@import "blocks/auth";
-//@import "blocks/slider";
-//@import "blocks/advantage";
-//@import "blocks/items_with_slider";
-//@import "blocks/goods";
-//@import "blocks/relevant";
-//@import "blocks/categories";
-//Все вместе
+//Вспомогательные странички
+
+// Категория
+@import "blocks/pages";
+@import "blocks/goods_cat";
+@import "blocks/filter";
+@import "blocks/slider-items";
+@import "blocks/categories";
+@import "blocks/pagination";
+@import "blocks/admin";
+// Категория
+
+//Блог
+//@import "blocks/blog_index";
+//@import "blocks/pages";
+////Блог
+
+////Отзывы
+//@import "blocks/otz";
+//Отзывы
+
+// товар
+//@import "blocks/pages";
+//@import "blocks/item";
+//@import "blocks/goods_cat";
+//@import "blocks/slider-item";
+//@import "blocks/wrapper-goods-index";
+// товар
 
 //корзина
-//@import "founts";
-//@import "reset";
-//@import "variables";
-//@import "mixins";
-//@import "core";
-//@import "blocks/header";
-//@import "blocks/footer";
 //@import "blocks/pages";
 //@import "blocks/cart";
 //корзина
