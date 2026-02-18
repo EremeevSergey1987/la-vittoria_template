@@ -25,13 +25,13 @@
 //Вспомогательные странички
 
 // Категория
-@import "blocks/pages";
-@import "blocks/goods_cat";
-@import "blocks/filter";
-@import "blocks/slider-items";
-@import "blocks/categories";
-@import "blocks/pagination";
-@import "blocks/admin";
+//@import "blocks/pages";
+//@import "blocks/goods_cat";
+//@import "blocks/filter";
+//@import "blocks/slider-items";
+//@import "blocks/categories";
+//@import "blocks/pagination";
+//@import "blocks/admin";
 // Категория
 
 //Блог
@@ -44,11 +44,11 @@
 //Отзывы
 
 // товар
-//@import "blocks/pages";
-//@import "blocks/item";
-//@import "blocks/goods_cat";
-//@import "blocks/slider-item";
-//@import "blocks/wrapper-goods-index";
+@import "blocks/pages";
+@import "blocks/item";
+@import "blocks/goods_cat";
+@import "blocks/slider-item";
+@import "blocks/wrapper-goods-index";
 // товар
 
 //корзина
