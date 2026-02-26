@@ -6,13 +6,13 @@
 }
 
 .wrap.content{
-  border: 1px solid #0092ff;
+  //border: 1px solid #0092ff;
 }
 .wrapper-goods-index{
   border: 1px solid #5a228e;
 }
 .goods{
-  border: 1px solid green;
+  //border: 1px solid green;
 
   h1, h2, p, h3{
     width: 100%;
@@ -28,7 +28,7 @@
   margin-top: 20px;
   justify-content: space-between;
   .item{
-    border: 1px solid red;
+    //border: 1px solid red;
     .new, .sale{
       border: 1px solid $site-color;
       position: absolute;
@@ -72,6 +72,7 @@
       color: $site-color;
       text-align: left;
       width: 100%;
+      line-height: 60px;
       span.through{
         text-decoration: line-through;
         font-size: 18px;
@@ -109,6 +110,15 @@
     .item {
       a{
         height: 300px;
+      }
+      .price{
+        line-height: 30px;
+        span{
+          font-size: 15px;
+          &.through{
+            font-size: 15px;
+          }
+        }
       }
     }
   }
