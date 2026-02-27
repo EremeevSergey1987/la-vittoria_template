@@ -12,8 +12,11 @@
   border: 1px solid #5a228e;
 }
 .goods{
-  //border: 1px solid green;
-
+  display: grid;
+  justify-content: center;
+  grid-template-columns: $product-width $product-width $product-width $product-width;
+  gap: 10px;
+  padding:10px;
   h1, h2, p, h3{
     width: 100%;
   }
@@ -23,12 +26,9 @@
     margin-bottom: 30px;
     overflow: hidden;
   }
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  justify-content: space-between;
+
+
   .item{
-    //border: 1px solid red;
     .new, .sale{
       border: 1px solid $site-color;
       position: absolute;
@@ -36,7 +36,7 @@
       width: auto;
       top:10px;
       left: 10px;
-      z-index: 1;
+      z-index: 2;
       color: $top_menu_color;
     }
     img{
@@ -51,16 +51,7 @@
     }
     a{
       display: flex;
-      height: 418px;
     }
-    h2 a{
-      height: auto;
-    }
-    width: 23%;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
     ul{
       display: flex;
       li{
@@ -69,10 +60,9 @@
     }
     .price{
       font-size: 25px;
-      color: $site-color;
       text-align: left;
       width: 100%;
-      line-height: 60px;
+      line-height: 30px;
       span.through{
         text-decoration: line-through;
         font-size: 18px;
@@ -80,10 +70,11 @@
       }
       span{
         font-size: 25px;
-        color: $site-color;
+        color: $price_color;
       }
     }
     h2 a{
+      height: auto;
       font-size: 16px;
       text-decoration: none;
       display: block;
@@ -92,6 +83,8 @@
 
     }
   }
+
+
 }
 
 .wrap.content.text{
@@ -105,12 +98,10 @@
 
 
 
+
 @media screen and (max-width: 1050px) {
   .goods{
     .item {
-      a{
-        height: 300px;
-      }
       .price{
         line-height: 30px;
         span{
@@ -119,42 +110,6 @@
             font-size: 15px;
           }
         }
-      }
-    }
-  }
-}
-@media screen and (max-width: 1000px) {
-  .goods{
-    .item {
-      a{
-        height: 290px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 950px) {
-  .goods{
-    .item {
-      a{
-        height: 280px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 900px) {
-  .goods{
-    .item {
-      a{
-        height: 270px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 850px) {
-  .goods{
-    .item {
-      a{
-        height: 260px;
       }
     }
   }
@@ -170,64 +125,21 @@
   }
 }
 @media screen and (max-width: 692px) {
+  .goods {
+    grid-template-columns: $product-width-mini $product-width-mini $product-width-mini;
+  }
   .two_goods, .first_banner{
     width: 100% !important;
   }
-  .goods{
-    .item{
-      width: 49%;
-      a{
-        height: 400px;
-      }
-    }
-  }
 }
 @media screen and (max-width: 556px) {
+  .goods {
+    grid-template-columns: $product-width-small $product-width-small;
+  }
   .first .item .price span {
     font-size: 26px;
     &.through {
       font-size: 20px;
-    }
-  }
-}
-@media screen and (max-width: 500px) {
-  .goods{
-    .item{
-      width: 49%;
-      a{
-        height: 300px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 450px) {
-  .goods{
-    .item{
-      width: 49%;
-      a{
-        height: 280px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 400px) {
-  .goods{
-    .item{
-      width: 49%;
-      a{
-        height: 260px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .goods{
-    .item{
-      width: 49%;
-      a{
-        height: 200px;
-      }
     }
   }
 }
