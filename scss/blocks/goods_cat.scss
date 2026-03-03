@@ -14,7 +14,7 @@
 .goods{
   display: grid;
   justify-content: center;
-  grid-template-columns: $product-width $product-width $product-width $product-width;
+  grid-template-columns: repeat(4, $product-width);
   gap: 10px;
   padding:10px;
   h1, h2, p, h3{
@@ -41,20 +41,21 @@
     }
     img{
       width: 100%;
-      object-fit: cover;
     }
     padding-bottom: 15px;
-    &:hover{
-      ul{
-        display:flex;
-      }
-    }
+    //&:hover{
+    //  ul{
+    //    display:flex;
+    //  }
+    //}
     a{
       display: flex;
     }
     ul{
       display: flex;
+      //grid-template-columns: auto;
       li{
+        border: 1px solid red;
         font-size: 12px;
       }
     }
@@ -124,9 +125,11 @@
     }
   }
 }
+
+
 @media screen and (max-width: 692px) {
   .goods {
-    grid-template-columns: $product-width-mini $product-width-mini $product-width-mini;
+    grid-template-columns: repeat(3, $product-width-mini);
   }
   .two_goods, .first_banner{
     width: 100% !important;
@@ -134,7 +137,7 @@
 }
 @media screen and (max-width: 556px) {
   .goods {
-    grid-template-columns: $product-width-small $product-width-small;
+    grid-template-columns: repeat(2, $product-width-small);
   }
   .first .item .price span {
     font-size: 26px;
