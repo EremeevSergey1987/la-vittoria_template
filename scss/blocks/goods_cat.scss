@@ -53,13 +53,17 @@
     }
     ul{
       display: flex;
-      //grid-template-columns: auto;
+      flex-direction: row;
+
+
       li{
+        width: 60px;
         border: 1px solid red;
         font-size: 12px;
       }
     }
     .price{
+      font-family: "Thernaly-Regular";
       font-size: 25px;
       text-align: left;
       width: 100%;

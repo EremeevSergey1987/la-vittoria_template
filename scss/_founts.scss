@@ -7,3 +7,10 @@
   src: url('../fonts/Geometria.eot');
   src: url('../fonts/Geometria.eot?#iefix') format('embedded-opentype'), url('../fonts/Geometria.woff') format('woff'), url('../fonts/Geometria.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Thernaly-Regular';
+  src: url("../fonts/Thernaly-Regular.otf");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
