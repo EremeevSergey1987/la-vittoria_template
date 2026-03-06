@@ -63,11 +63,13 @@
       }
     }
     .price{
-      font-family: "Thernaly-Regular";
+      font-family: "bahnschrift";
       font-size: 25px;
       text-align: left;
       width: 100%;
       line-height: 30px;
+      color: $price-color;
+      margin: 5px 0 0 5px;
       span.through{
         text-decoration: line-through;
         font-size: 18px;
@@ -75,7 +77,7 @@
       }
       span{
         font-size: 25px;
-        color: $price_color;
+        color: $price-sale-color;
       }
     }
     h2 a{
