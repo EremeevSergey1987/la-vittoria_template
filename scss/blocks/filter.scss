@@ -1,8 +1,11 @@
-.bx-filter-parameters-box.filter__parameters.active{
+.active{
   background-color: $site-color;
-  padding: 0 10px;
+  .filter__link{
+    margin: 0 5px;
+  }
   a{
-    color: #FFFFFF;
+    color: #000000;
+
   }
 }
 .filter{

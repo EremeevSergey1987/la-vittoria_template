@@ -6,6 +6,7 @@
 @import "core";
 @import "blocks/header";
 @import "blocks/footer";
+@import "blocks/pages";
 
 //Стили для главной главной
 //@import "blocks/goods";
@@ -18,25 +19,22 @@
 //Стили для главной главной
 
 //Вспомогательные странички
-//@import "blocks/pages";
 //@import "blocks/shops";
 //@import "blocks/blog_index";
 //@import "blocks/auth";
 //Вспомогательные странички
 
 // Товары
-@import "blocks/pages";
 @import "blocks/goods_cat";
 @import "blocks/filter";
 @import "blocks/slider-items";
-@import "blocks/categories";
+//@import "blocks/categories";
 @import "blocks/pagination";
 @import "blocks/admin";
 // Товары
 
 //Блог
 //@import "blocks/blog_index";
-//@import "blocks/pages";
 ////Блог
 
 ////Отзывы
@@ -44,14 +42,11 @@
 //Отзывы
 
 // товар
-//@import "blocks/pages";
 //@import "blocks/item";
 //@import "blocks/goods_cat";
 //@import "blocks/slider-item";
-//@import "blocks/wrapper-goods-index";
 // товар
 
 //корзина
-//@import "blocks/pages";
 //@import "blocks/cart";
 //корзина

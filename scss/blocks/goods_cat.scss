@@ -5,12 +5,6 @@
   flex-direction: column;
 }
 
-.wrap.content{
-  //border: 1px solid #0092ff;
-}
-.wrapper-goods-index{
-  border: 1px solid #5a228e;
-}
 .goods{
   display: grid;
   justify-content: center;
@@ -29,6 +23,7 @@
 
 
   .item{
+    position:relative;
     .new, .sale{
       border: 1px solid $site-color;
       position: absolute;
@@ -36,31 +31,17 @@
       width: auto;
       top:10px;
       left: 10px;
-      z-index: 2;
       color: $top_menu_color;
     }
     img{
       width: 100%;
     }
+    .sizes{
+      font-size: 12px;
+    }
     padding-bottom: 15px;
-    //&:hover{
-    //  ul{
-    //    display:flex;
-    //  }
-    //}
     a{
       display: flex;
-    }
-    ul{
-      display: flex;
-      flex-direction: row;
-
-
-      li{
-        width: 60px;
-        border: 1px solid red;
-        font-size: 12px;
-      }
     }
     .price{
       font-family: "bahnschrift";
