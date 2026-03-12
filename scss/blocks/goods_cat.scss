@@ -22,8 +22,13 @@
   }
 
 
+
   .item{
     position:relative;
+    /* Контейнер для картинки */
+    img{
+      width: 100%;
+    }
     .new, .sale{
       border: 1px solid $site-color;
       position: absolute;
@@ -31,11 +36,10 @@
       width: auto;
       top:10px;
       left: 10px;
+      z-index: 10;
       color: $top_menu_color;
     }
-    img{
-      width: 100%;
-    }
+
     .sizes{
       font-size: 12px;
     }
