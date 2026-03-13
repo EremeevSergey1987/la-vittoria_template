@@ -3,7 +3,7 @@
 }
 .wrap.content{
   display: flex;
-  flex-direction:row;
+  flex-direction:column;
   .breadcrumb{
     width: 41.5%;
   }
@@ -82,15 +82,16 @@
 
 
   .prs{
+    font-family: "bahnschrift";
     font-size: 22px;
     margin-top: 20px;
     span{
       font-size: 36px;
-      color: $top_menu_color;
+      color: $price-color;
     }
     .prs_old{
       font-size: 26px;
-      color: $site-color;
+      color: #989898;
       text-decoration: line-through;
     }
   }
