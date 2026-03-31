@@ -1,19 +1,18 @@
 .menu{
   display: flex;
-  ul.block_cat3{
+  ul.block_cat2{
     background-color: white;
     position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
     width: 100%;
-    margin-top: 30px;
     li{
       a{
         background-color: $gray;
         line-height: 18px;
         padding: 5px 0 5px 8px;
-        margin: 0 20px 20px 0;
+        margin: 0 15px 5px 0;
         span{
           padding: 8px 8px;
           font-size: 12px;
@@ -47,5 +46,28 @@
         }
       }
     }
+  }
+  .btn--catalog{
+    background-color: #3f5053;
+    color: white;
+    margin: 0;
+    transition: 1s;
+    padding:5px 8px;
+    width:100px;
+    height: 21px;
+    text-align: center;
+    &:hover{
+      background-color: $site-color;
+      transition: 1s;
+    }
+  }
+}
+
+@media (max-width:913px){
+  .block_cat2{
+    display: none !important;
+  }
+  .btn--catalog{
+    width: 100% !important;
   }
 }

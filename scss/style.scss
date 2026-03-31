@@ -15,14 +15,19 @@
 //@import "blocks/blog_index";
 //@import "blocks/items_with_slider";
 //@import "blocks/relevant";
+//@import "blocks/categories-index";
 //@import "blocks/categories";
 //Стили для главной главной
 
 //Вспомогательные странички
-@import "blocks/shops";
+//@import "blocks/shops";
 //@import "blocks/blog_index";
 //@import "blocks/auth";
 //Вспомогательные странички
+
+//Каталог
+//@import "blocks/categories";
+//Каталог
 
 // Товары
 //@import "blocks/goods_cat";
@@ -42,10 +47,10 @@
 //Отзывы
 
 // товар
-//@import "blocks/item";
-//@import "blocks/goods_cat";
-//@import "blocks/slider-item";
-//@import "blocks/categories";
+@import "blocks/item";
+@import "blocks/goods_cat";
+@import "blocks/slider-item";
+@import "blocks/categories-index";
 // товар
 
 //корзина
