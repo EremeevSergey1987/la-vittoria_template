@@ -10,6 +10,8 @@
     <!--[if lt IE 9]>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
+    <!-- CSS в <head> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -606,40 +608,73 @@
         </div>
     </div>
 
-<div class="wrapper-goods-index">
+<div class="wrap content">
+    <h2>Популярное</h2>
         <div class="goods">
-            <h2>Популярное</h2>
-                <div class="item">
-                    <a href="#"><img src="img/8.jpg"></a>
-                    <p class="price"><span>3900 ₽</span></p>
-                    <h3><a href="#">Юбка</a></h3>
-                    <p>Лидер</p>
-                    <p>Размеры в наличии:</p>
-                    <ul><li>44 |</li><li>46 |</li><li>48 |</li><li>44 |</li><li>46 |</li><li>48 |</li><li>44 |</li><li>46 |</li><li>48 |</li></ul>
-                </div>
-            <div class="item">
-                <a href="#"><img src="img/8.jpg"></a>
-                <p class="price"><span class="through">4900 ₽</span> <span>3900 ₽</span></p>
-                <h3><a href="#">Юбка</a></h3>
-                <p>Лидер</p>
-                <p>Размеры в наличии:</p>
-                <ul><li>44 |</li><li>46 |</li><li>48 |</li></ul>
-            </div>
+            <div class="item slider">
+                <p class="new">Новинка</p>
 
-            <div class="item">
-                <a href="#"><img alt="блог" src="img/8.jpg"></a>
-                <p class="price"><span class="through">4900 ₽</span> <span>3900 ₽</span></p>
-                <h3><a href="#">Юбка</a></h3>
-                <p>Лидер</p>
-                <p>Размеры в наличии:</p>
-                <ul><li>44 |</li><li>46 |</li><li>48 |</li></ul>
-            </div>
-                <div class="item">
-                    <a href="#"><img alt="блог" src="img/8.jpg"></a>
-                    <p class="price"><span class="through">4900 ₽</span> <span>3900 ₽</span></p>
-                    <h3><a href="#">Джинсы</a></h3>
-                    <p>Лидер</p>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="img/8.jpg" data-fancybox="gallery"><img src="img/8.jpg"></a></div>
+                        <div class="swiper-slide"><a href="img/2.jpg" data-fancybox="gallery"><img src="img/2.jpg"></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
+
+                <p class="price"><span>3 901 ₽</span></p>
+                <p>44,46,48</p>
+            </div>
+            <div class="item slider">
+                <p class="new">Новинка</p>
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="img/8.jpg" data-fancybox="gallery"><img src="img/8.jpg"></a></div>
+                        <div class="swiper-slide"><a href="img/2.jpg" data-fancybox="gallery"><img src="img/2.jpg"></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <p class="price"><span>3 901 ₽</span></p>
+                <p>44,46,48</p>
+            </div>
+            <div class="item slider">
+                <p class="new">Новинка</p>
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="img/8.jpg" data-fancybox="gallery"><img src="img/8.jpg"></a></div>
+                        <div class="swiper-slide"><a href="img/2.jpg" data-fancybox="gallery"><img src="img/2.jpg"></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <p class="price"><span>3 901 ₽</span></p>
+                <p>44,46,48</p>
+            </div>
+            <div class="item slider">
+                <p class="new">Новинка</p>
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="img/8.jpg" data-fancybox="gallery"><img src="img/8.jpg"></a></div>
+                        <div class="swiper-slide"><a href="img/2.jpg" data-fancybox="gallery"><img src="img/2.jpg"></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <p class="price"><span>3 901 ₽</span></p>
+                <p>44,46,48</p>
+            </div>
         </div>
 </div>
 
@@ -1059,6 +1094,33 @@
     });
 </script>
 
+<!-- JS перед </body> -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const largeSlider = ()=>{
+        let largeSliders = document.querySelectorAll('.swiper')
+        let prevArrow = document.querySelectorAll('.swiper-button-prev')
+        let nextArrow = document.querySelectorAll('.swiper-button-next')
+        largeSliders.forEach((slider, index)=>{
+            // this bit checks if there's more than 1 slide, if there's only 1 it won't loop
+            let sliderLength = slider.children[0].children.length
+            let result = (sliderLength > 1) ? true : false
+            const swiper = new Swiper(slider, {
+                loop: result,
+                navigation: {
+                    // the 'index' bit below is just the order of the class in the queryselectorAll array, so the first one would be NextArrow[0] etc
+                    nextEl: nextArrow[index],
+                    prevEl: prevArrow[index],
+                },
+                pagination: {
+                    el: '.swiper .swiper-pagination',
+                    clickable: true,
+                },
+            });
+        })
+    }
+    window.addEventListener('load', largeSlider)
+</script>
 
 </body>
 </html>

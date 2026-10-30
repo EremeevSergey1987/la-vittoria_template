@@ -27,12 +27,29 @@ window.addEventListener('scroll', function(ev) {
     var someDiv = document.getElementById('someDiv');
     var filtertop = document.getElementById('filtertop');
     var distanceToTop = someDiv.getBoundingClientRect().top;
-    console.log(distanceToTop);
     if(distanceToTop < -82){
         filtertop.classList.add('fixtop')
     }
     else{
         filtertop.classList.remove('fixtop')
+    }
+});
+
+window.addEventListener('scroll', function(ev) {
+    var footer = document.getElementById('footer');
+    var desktop_menu = document.getElementById('desktop-menu');
+    var distanceToTop = footer.getBoundingClientRect().bottom;
+    var totalHeight = document.documentElement.scrollHeight;
+
+    console.log(distanceToTop);
+    console.log(desktop_menu);
+    console.log(totalHeight);
+
+    if(distanceToTop < 1770){
+        desktop_menu.classList.add('desktop_menu_down')
+    }
+    else{
+        desktop_menu.classList.remove('desktop_menu_down')
     }
 });
 

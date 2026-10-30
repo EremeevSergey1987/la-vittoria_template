@@ -7,6 +7,8 @@
     <meta name="keywords" content=""/>
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <!-- CSS в <head> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!--[if lt IE 9]>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
@@ -395,8 +397,7 @@
 
 <div class="container" id="someDiv">
     <div class="wrap content items_w">
-        <p><a href="/">Главная</a> / Блузы</p>
-        <h1>Блузы</h1>
+        <p><a href="/">Главная</a> | каталог | платья</p>
     </div>
 </div>
 
@@ -1090,97 +1091,261 @@
 
 
 <div class="wrap content">
-    <div class="goods">
+    <div class="left-menu-and-product-wrapper">
+        <div class="left-menu">
+            <ul class="desktop-menu catalog" id="desktop-menu">
+                <li id="bx_1847241719_411"><a class="pred" href="/catalog/sale/">РАСПРОДАЖА <span>1349</span></a></li>
+                <li id="bx_1847241719_471"><a href="/catalog/pidzhaki_po_999_rub/">Пиджаки по 999 руб. <span>34</span></a></li>
+                <li id="bx_1847241719_406" class="dcjq-parent-li">
+                    <a  href="#" class="filter__link">Платья  <span>2370</span></a>
+                    <ul class=" filter__block-cat">
+                        <li id="bx_1847241719_433"><a href="/catalog/vechernie_platya/">Вечерние платья <span>24</span></a></li>
+                        <li id="bx_1847241719_441"><a href="/catalog/kokteylnye_platya/">Коктейльные платья <span>65</span></a>
+                        </li>
+                        <li id="bx_1847241719_434"><a href="/catalog/letnie_platya/">Летние платья <span>60</span></a>
+                        </li>
+                        <li id="bx_1847241719_438"><a href="/catalog/ofisnye_platya/">Офисные платья <span>60</span></a>
+                        </li>
+                        <li id="bx_1847241719_469"><a href="/catalog/platya_999/">Платья 999 <span>135</span></a>
+                        </li>
+                        <li id="bx_1847241719_440"><a href="/catalog/platya_so_skidkoy/">Платья со скидкой <span>273</span></a>
+                        </li>
+                        <li id="bx_1847241719_435"><a href="/catalog/platya_maksi/">Платья-макси <span>18</span></a>
+                        </li>
+                        <li id="bx_1847241719_436"><a href="/catalog/platya_midi/">Платья-миди <span>32</span></a>
+                        </li>
+                        <li id="bx_1847241719_437"><a href="/catalog/platya_mini/">Платья-мини <span>341</span></a>
+                        </li>
+                        <li id="bx_1847241719_466"><a href="/catalog/platya_rubashki/">Платья-рубашки <span>60</span></a>
+                        </li>
+                        <li id="bx_1847241719_439"><a href="/catalog/povsednevnye_platya/">Повседневные платья <span>971</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="bx_1847241719_390" class="dcjq-parent-li"><a href="/catalog/bluzy/" class="dcjq-parent">Блузы <span>2967</span></a>
+                    <ul class="dropdown-menu">
+                        <li id="bx_1847241719_443"><a href="/catalog/bluzy_bez_rukavov/">Блузы без рукавов <span>95</span></a>
+                        </li>
+                        <li id="bx_1847241719_445"><a href="/catalog/bluzy_s_bantom/">Блузы с бантом <span>2</span></a>
+                        </li>
+                        <li id="bx_1847241719_446"><a href="/catalog/bluzy_s_dlinnym_rukavom/">Блузы с длинным рукавом <span>215</span></a>
+                        </li>
+                        <li id="bx_1847241719_447"><a href="/catalog/bluzy_s_korotkim_rukavom/">Блузы с коротким рукавом <span>271</span></a>
+                        </li>
+                        <li id="bx_1847241719_448"><a href="/catalog/bluzy_s_otkrytymi_plechami/">Блузы с открытыми плечами <span>0</span></a>
+                        </li>
+                        <li id="bx_1847241719_449"><a href="/catalog/bluzy_s_ryushami_i_volanami/">Блузы с рюшами и воланами <span>0</span></a>
+                        </li>
+                        <li id="bx_1847241719_450"><a href="/catalog/bluzy_so_skidkoy/">Блузы со скидкой <span>227</span></a>
+                        </li>
+                        <li id="bx_1847241719_465"><a href="/catalog/bluzy_rubashki/">Блузы-рубашки <span>111</span></a>
+                        </li>
+                        <li id="bx_1847241719_444"><a href="/catalog/kruzhevnye_bluzy/">Кружевные блузы <span>0</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="bx_1847241719_402"><a href="/catalog/longslivy/">Лонгсливы <span>373</span></a>
+                </li>
+                <li id="bx_1847241719_395"><a href="/catalog/dzhempera/">Джемпера <span>920</span></a>
+                </li>
+                <li id="bx_1847241719_394"><a href="/catalog/vodolazki/">Водолазки <span>510</span></a>
+                </li>
+                <li id="bx_1847241719_408"><a href="/catalog/svitshoty/">Свитшоты <span>131</span></a>
+                </li>
+                <li id="bx_1847241719_409"><a href="/catalog/tuniki/">Туники <span>149</span></a>
+                </li>
+                <li id="bx_1847241719_398"><a href="/catalog/zhilety/">Жилеты <span>98</span></a>
+                </li>
+                <li id="bx_1847241719_397"><a href="/catalog/zhakety/">Жакеты <span>262</span></a>
+                </li>
+                <li id="bx_1847241719_405"><a href="/catalog/pidzhaki/">Пиджаки <span>176</span></a>
+                </li>
+                <li id="bx_1847241719_399"><a href="/catalog/kardigany/">Кардиганы <span>156</span></a>
+                </li>
+                <li id="bx_1847241719_464"><a href="/catalog/bluzy_futbolki/">Блузы - футболки <span>420</span></a>
+                </li>
+                <li id="bx_1847241719_401"><a href="/catalog/kurtki_polupalto/">Куртки, полупальто <span>55</span></a>
+                </li>
+                <li id="bx_1847241719_472"><a href="/catalog/plyazhnoe/">Пляжное <span>0</span></a>
+                </li>
+                <li id="bx_1847241719_410" class="dcjq-parent-li"><a href="/catalog/yubki/" class="dcjq-parent">Юбки <span>443</span></a>
+                    <ul class="dropdown-menu">
+                        <li id="bx_1847241719_460"><a href="/catalog/pryamye_yubki/">Прямые юбки <span>0</span></a>
+                        </li>
+                        <li id="bx_1847241719_461"><a href="/catalog/uzkie_yubki/">Узкие юбки <span>0</span></a>
+                        </li>
+                        <li id="bx_1847241719_462"><a href="/catalog/shirokie_yubki/">Широкие юбки <span>0</span></a>
+                        </li>
+                        <li id="bx_1847241719_458"><a href="/catalog/yubka_midi/">Юбка-миди <span>95</span></a>
+                        </li>
+                        <li id="bx_1847241719_457"><a href="/catalog/yubki_maksi/">Юбки-макси <span>20</span></a>
+                        </li>
+                        <li id="bx_1847241719_459"><a href="/catalog/yubki_mini/">Юбки-мини <span>101</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="bx_1847241719_393" class="dcjq-parent-li"><a href="/catalog/bryuki/" class="dcjq-parent">Брюки <span>570</span></a>
+                    <ul class="dropdown-menu">
+                        <li id="bx_1847241719_454"><a href="/catalog/bryuki_s_vysokoy_taliey/">Брюки с высокой талией <span>0</span></a>
+                        </li>
+                        <li id="bx_1847241719_456"><a href="/catalog/bryuki_so_skidkoy/">Брюки со скидкой <span>58</span></a>
+                        </li>
+                        <li id="bx_1847241719_451"><a href="/catalog/zauzhennye_bryuki/">Зауженные брюки <span>0</span></a>
+                        </li>
+                        <li id="bx_1847241719_452"><a href="/catalog/klassicheskie_bryuki/">Классические брюки <span>0</span></a>
+                        </li>
+                        <li id="bx_1847241719_453"><a href="/catalog/pryamye_bryuki/">Прямые брюки <span>0</span></a>
+                        </li>
+                        <li id="bx_1847241719_455"><a href="/catalog/shirokie_i_raskleshennye_bryuki/">Широкие и расклешенные брюки <span>0</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="bx_1847241719_396"><a href="/catalog/dzhinsy/">Джинсы <span>103</span></a>
+                </li>
+                <li id="bx_1847241719_403"><a href="/catalog/losiny/">Лосины <span>21</span></a>
+                </li>
+                <li id="bx_1847241719_381"><a href="/catalog/shorty/">Шорты <span>12</span></a>
+                </li>
+                <li id="bx_1847241719_463"><a href="/catalog/futbolki/">Футболки <span>0</span></a>
+                </li>
+                <li id="bx_1847241719_389"><a href="/catalog/shlyapki/">Шляпки <span>27</span></a>
+                </li>
+                <li id="bx_1847241719_404"><a href="/catalog/mayki_topy/">Майки <span>317</span></a>
+                </li>
+                <li id="bx_1847241719_467"><a href="/catalog/topy/">Топы <span>145</span></a>
+                </li>
+                <li id="bx_1847241719_400"><a href="/catalog/kombinezony/">Комбинезоны <span>35</span></a>
+                </li>
+                <li id="bx_1847241719_392"><a href="/catalog/bolero/">Болеро <span>47</span></a>
+                </li>
+                <li id="bx_1847241719_382" class="dcjq-parent-li"><a href="/catalog/aksessuary/" class="dcjq-parent">Аксессуары2 <span>2278</span></a>
+                    <ul class="dropdown-menu">
+                        <li id="bx_1847241719_383" class="dcjq-parent-li"><a href="/catalog/bizhuteriya/" class="dcjq-parent">Бижутерия <span>632</span></a>
+                            <ul class="dropdown-menu">
+                                <li id="bx_1847241719_384"><a href="/catalog/zonty/">Зонты888 <span>35</span></a>
+                                </li></ul>
+                        </li>
+                        <li id="bx_1847241719_384"><a href="/catalog/zonty/">Зонты <span>35</span></a>
+                        </li>
+                        <li id="bx_1847241719_385"><a href="/catalog/platki_kosynki/">Платки, косынки <span>152</span></a>
+                        </li>
+                        <li id="bx_1847241719_386"><a href="/catalog/remni/">Ремни <span>336</span></a>
+                        </li>
+                        <li id="bx_1847241719_387"><a href="/catalog/sumki_ryukzaki/">Сумки, рюкзаки <span>669</span></a>
+                        </li>
+                        <li id="bx_1847241719_388"><a href="/catalog/sharfy_palantiny/">Шарфы, палантины <span>450</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="bx_1847241719_470"><a href="/catalog/plyazhnyy_otdykh/">Пляжный отдых <span>9</span></a>
+                </li>
+            </ul>
+        </div>
 
-        <div class="item slider">
-            <p class="new">Новинка</p>
+        <div class="goods">
+            <div class="item slider">
+                <p class="new">Новинка</p>
 
-                <div class="owl-carousel">
-                    <div class="slider__item">
-                        <div class="slider__img">
-                            <a href="#" class="card__image"><img src="img/8.jpg"></a>
-                        </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="img/8.jpg" data-fancybox="gallery"><img src="img/8.jpg"></a></div>
+                        <div class="swiper-slide"><a href="img/2.jpg" data-fancybox="gallery"><img src="img/2.jpg"></a></div>
                     </div>
-                    <div class="slider__item">
-                        <div class="slider__img">
-                            <a href="#" class="card__image"><img src="img/8.jpg"></a>
-                        </div>
-                    </div>
-                    <div class="slider__item">
-                    <div class="slider__img">
-                        <a href="#" class="card__image"><img src="img/8.jpg"></a>
-                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-                </div>
+                <p class="price"><span>3 901 ₽</span></p>
+                <p class="art">Р935-13940 (23/17,27,75) черный 1# zima snow</p>
+                <p class="size">44 46 48 44 46 48 44 46 48 44 46 48 44 46 48 44 46 48 44 46 48 44 46 48 </p>
+            </div>
+            <div class="item">
+                <p class="sale">Скидка-51%</p>
+                <a href="#" class="card__image"><img src="img/7.jpeg"></a>
+                <p class="price"><span>5 000 ₽</span> <span class="through" id="price_597406234">10 000 ₽</span></p>
+                <p class="art">Р935-13940 (23/17,27,75) черный 1# zima snow</p>
+                <p class="size">44 46 48</p>
+            </div>
+            <div class="item">
+                <p class="sale">Скидка-51%</p>
+                <a href="#" class="card__image"><img src="img/7.jpeg"></a>
+                <p class="art">Р935-13940 (23/17,27,75) черный 1# zima snow</p>
+                <p class="price"><span>5 000 ₽</span> <span class="through" id="price_597406234">10 000 ₽</span></p>
+                <p class="size">44 46 48</p>
+            </div>
+            <div class="item">
+                <p class="sale">Скидка-51%</p>
+                <a href="#" class="card__image"><img src="img/7.jpeg"></a>
+                <p class="art">Р935-13940 (23/17,27,75) черный 1# zima snow</p>
+                <p class="price"><span>5 000 ₽</span> <span class="through" id="price_597406234">10 000 ₽</span></p>
+                <p class="size">44 46 48</p>
+            </div>
+            <div class="item">
+                <p class="sale">Скидка-51%</p>
+                <a href="#" class="card__image"><img src="img/7.jpeg"></a>
+                <p class="art">Р935-13940 (23/17,27,75) черный 1# zima snow</p>
+                <p class="price"><span>5 000 ₽</span> <span class="through" id="price_597406234">10 000 ₽</span></p>
+                <p class="size">44 46 48</p>
+            </div>
+            <div class="item">
+                <p class="sale">Скидка-51%</p>
+                <a href="#" class="card__image"><img src="img/7.jpeg"></a>
+                <p class="art">Р935-13940 (23/17,27,75) черный 1# zima snow</p>
+                <p class="price"><span>5 000 ₽</span> <span class="through" id="price_597406234">10 000 ₽</span></p>
+                <p class="size">44 46 48</p>
+            </div>
+            <div class="item">
+                <p class="sale">Скидка-51%</p>
+                <a href="#" class="card__image"><img src="img/7.jpeg"></a>
+                <p class="art">Р935-13940 (23/17,27,75) черный 1# zima snow</p>
+                <p class="price"><span>5 000 ₽</span> <span class="through" id="price_597406234">10 000 ₽</span></p>
+                <p class="size">44 46 48</p>
+            </div>
+            <div class="item">
+                <p class="sale">Скидка-51%</p>
+                <a href="#" class="card__image"><img src="img/7.jpeg"></a>
+                <p class="art">Р935-13940 (23/17,27,75) черный 1# zima snow</p>
+                <p class="price"><span>5 000 ₽</span> <span class="through" id="price_597406234">10 000 ₽</span></p>
+                <p class="size">44 46 48</p>
+            </div>
+            <div class="item">
+                <p class="sale">Скидка-51%</p>
+                <a href="#" class="card__image"><img src="img/7.jpeg"></a>
+                <p class="art">Р935-13940 (23/17,27,75) черный 1# zima snow</p>
+                <p class="price"><span>5 000 ₽</span> <span class="through" id="price_597406234">10 000 ₽</span></p>
+                <p class="size">44 46 48</p>
+            </div>
+            <div class="item">
+                <p class="sale">Скидка-51%</p>
+                <a href="#" class="card__image"><img src="img/7.jpeg"></a>
+                <p class="art">Р935-13940 (23/17,27,75) черный 1# zima snow</p>
+                <p class="price"><span>5 000 ₽</span> <span class="through" id="price_597406234">10 000 ₽</span></p>
+                <p class="size">44 46 48</p>
+            </div>
+            <div class="item">
+                <p class="sale">Скидка-51%</p>
+                <a href="#" class="card__image"><img src="img/7.jpeg"></a>
+                <p class="art">Р935-13940 (23/17,27,75) черный 1# zima snow</p>
+                <p class="price"><span>5 000 ₽</span> <span class="through" id="price_597406234">10 000 ₽</span></p>
+                <p class="size">44 46 48</p>
+            </div>
+            <div class="item">
+                <p class="sale">Скидка-51%</p>
+                <a href="#" class="card__image"><img src="img/7.jpeg"></a>
+                <p class="art">Р935-13940 (23/17,27,75) черный 1# zima snow</p>
+                <p class="price"><span>5 000 ₽</span> <span class="through" id="price_597406234">10 000 ₽</span></p>
+                <p class="size">44 46 48</p>
+            </div>
+            <div class="item">
+                <p class="sale">Скидка-51%</p>
+                <a href="#" class="card__image"><img src="img/7.jpeg"></a>
+                <p class="art">Р935-13940 (23/17,27,75) черный 1# zima snow</p>
+                <p class="price"><span>5 000 ₽</span> <span class="through" id="price_597406234">10 000 ₽</span></p>
+                <p class="size">44 46 48</p>
+            </div>
 
-            <p class="price"><span>3 901 ₽</span></p>
-            <p>44,46,48</p>
-        </div>
 
 
-        <div class="item">
-            <p class="sale">Скидка-51%</p>
-            <a href="#" class="card__image"><img src="img/7.jpeg"></a>
-            <p class="price"><span>5 000 ₽</span> <span class="through" id="price_597406234">10 000 ₽</span></p>
-            <p>44,46,48</p>
-        </div>
-
-        <div class="item">
-            <p class="sale">Скидка-51%</p>
-            <a href="#" class="card__image"><img src="img/9.jpeg"></a>
-            <p class="price"><span>5 000 ₽</span> <span class="through" id="price_59740634">10 000 ₽</span></p>
-            <p class="sizes">44,46,48</p>
-        </div>
-
-        <div class="item">
-            <p class="sale">Скидка-51%</p>
-            <a href="#" class="card__image"><img src="img/8.jpg"></a>
-            <p class="price"><span>5 000 ₽</span> <span class="through" id="price_59740623">10 000 ₽</span></p>
-            <p  class="sizes">29 (48-50),29 (48-50),29 (48-50),30 (50),31 (52),32 (52-54),33 (54),</p>
-        </div>
-
-        <div class="item">
-            <p class="sale">Скидка-51%</p>
-            <a href="#" class="card__image"><img src="img/7.jpeg"></a>
-            <p class="price"><span>5 000 ₽</span> <span class="through" id="price_597406234">10 000 ₽</span></p>
-            <p>44</p>
-        </div>
-
-        <div class="item">
-            <p class="sale">Скидка-51%</p>
-            <a href="#" class="card__image"><img src="img/9.jpeg"></a>
-            <p class="price"><span>5 000 ₽</span> <span class="through" id="price_59740634">10 000 ₽</span></p>
-            <p>44,46,48</p>
-        </div>
-
-        <div class="item">
-            <p class="sale">Скидка-51%</p>
-            <a href="#" class="card__image"><img src="img/8.jpg"></a>
-            <p class="price"><span>5 000 ₽</span> <span class="through" id="price_59740623">10 000 ₽</span></p>
-            <p>44,46,48</p>
-        </div>
-
-        <div class="item">
-            <p class="sale">Скидка-51%</p>
-            <a href="#" class="card__image"><img src="img/7.jpeg"></a>
-            <p class="price"><span>5 000 ₽</span> <span class="through" id="price_597406234">10 000 ₽</span></p>
-            <p>44,46,48</p>
-        </div>
-
-        <div class="item">
-            <p class="sale">Скидка-51%</p>
-            <a href="#" class="card__image"><img src="img/9.jpeg"></a>
-            <p class="price"><span>5 000 ₽</span> <span class="through" id="price_59740634">10 000 ₽</span></p>
-            <p>44,46,48</p>
-        </div>
-
-        <div class="item">
-            <p class="sale">Скидка-51%</p>
-            <a href="#" class="card__image">
-
-                <img src="img/8.jpg"></a>
-            <p class="price"><span>5 000 ₽</span> <span class="through" id="price_59740623">10 000 ₽</span></p>
-            <p>44,46,48</p>
         </div>
 
 
@@ -1258,71 +1423,162 @@
 </p>
 </div>
 
+
 <div class="wrap content">
-<nav class="menu">
-    <ul class="block_cat2">
-        <li id="bx_1847241719_411"><a class="pred" href="/catalog/sale/">РАСПРОДАЖА <span>1349</span></a></li>
-        <li id="bx_1847241719_471"><a href="/catalog/pidzhaki_po_999_rub/">Пиджаки по 999 руб. <span>34</span></a></li>
-        <li id="bx_1847241719_406">
-            <a href="/catalog/platya/">Платья  <span>2370</span></a>
-            <ul class="submenu">
-                <li id="bx_1847241719_433"><a href="/catalog/vechernie_platya/">Вечерние платья <span>24</span></a></li>
-                <li id="bx_1847241719_441"><a href="/catalog/kokteylnye_platya/">Коктейльные платья <span>65</span></a>
-                </li>
-                <li id="bx_1847241719_434"><a href="/catalog/letnie_platya/">Летние платья <span>60</span></a>
-                </li>
-                <li id="bx_1847241719_438"><a href="/catalog/ofisnye_platya/">Офисные платья <span>60</span></a>
-                </li>
-                <li id="bx_1847241719_469"><a href="/catalog/platya_999/">Платья 999 <span>135</span></a>
-                </li>
-                <li id="bx_1847241719_440"><a href="/catalog/platya_so_skidkoy/">Платья со скидкой <span>273</span></a>
-                </li>
-                <li id="bx_1847241719_435"><a href="/catalog/platya_maksi/">Платья-макси <span>18</span></a>
-                </li>
-                <li id="bx_1847241719_436"><a href="/catalog/platya_midi/">Платья-миди <span>32</span></a>
-                </li>
-                <li id="bx_1847241719_437"><a href="/catalog/platya_mini/">Платья-мини <span>341</span></a>
-                </li>
-                <li id="bx_1847241719_466"><a href="/catalog/platya_rubashki/">Платья-рубашки <span>60</span></a>
-                </li>
-                <li id="bx_1847241719_439"><a href="/catalog/povsednevnye_platya/">Повседневные платья <span>971</span></a>
-                </li>
-            </ul>
-        </li>
-        <li id="bx_1847241719_390"><a href="/catalog/bluzy/">Блузы <span>2967</span></a>
-            <ul class="dropdown-menu">
-                <li id="bx_1847241719_443"><a href="/catalog/bluzy_bez_rukavov/">Блузы без рукавов <span>95</span></a>
-                </li>
-                <li id="bx_1847241719_445"><a href="/catalog/bluzy_s_bantom/">Блузы с бантом <span>2</span></a>
-                </li>
-                <li id="bx_1847241719_446"><a href="/catalog/bluzy_s_dlinnym_rukavom/">Блузы с длинным рукавом <span>215</span></a>
-                </li>
-                <li id="bx_1847241719_447"><a href="/catalog/bluzy_s_korotkim_rukavom/">Блузы с коротким рукавом <span>271</span></a>
-                </li>
-                <li id="bx_1847241719_448"><a href="/catalog/bluzy_s_otkrytymi_plechami/">Блузы с открытыми плечами <span>0</span></a>
-                </li>
-                <li id="bx_1847241719_449"><a href="/catalog/bluzy_s_ryushami_i_volanami/">Блузы с рюшами и воланами <span>0</span></a>
-                </li>
-                <li id="bx_1847241719_450"><a href="/catalog/bluzy_so_skidkoy/">Блузы со скидкой <span>227</span></a>
-                </li>
-                <li id="bx_1847241719_465"><a href="/catalog/bluzy_rubashki/">Блузы-рубашки <span>111</span></a>
-                </li>
-                <li id="bx_1847241719_444"><a href="/catalog/kruzhevnye_bluzy/">Кружевные блузы <span>0</span></a>
-                </li>
-            </ul>
-        </li>
-        <li id="bx_1847241719_402"><a href="/catalog/longslivy/">Лонгсливы <span>373</span></a>
-        </li>
-        <li id="bx_1847241719_395"><a href="/catalog/dzhempera/">Джемпера <span>920</span></a>
-        </li>
-    </ul>
-    <a class="btn--catalog" href="https://la-vittoria.ru/catalog/">Каталог</a>
-</nav>
+    <nav class="menu">
+        <ul class="block_cat2">
+            <li id="bx_1847241719_411"><a class="pred" href="/catalog/sale/">РАСПРОДАЖА <span>1349</span></a></li>
+            <li id="bx_1847241719_471"><a href="/catalog/pidzhaki_po_999_rub/">Пиджаки по 999 руб. <span>34</span></a></li>
+            <li id="bx_1847241719_406">
+                <a class="catalog" href="/catalog/platya/">Платья  <span>2370</span></a>
+                <ul>
+                    <li id="bx_1847241719_433"><a href="/catalog/vechernie_platya/">Вечерние платья <span>24</span></a></li>
+                    <li id="bx_1847241719_441"><a href="/catalog/kokteylnye_platya/">Коктейльные платья <span>65</span></a>
+                    </li>
+                    <li id="bx_1847241719_434"><a href="/catalog/letnie_platya/">Летние платья <span>60</span></a>
+                    </li>
+                    <li id="bx_1847241719_438"><a href="/catalog/ofisnye_platya/">Офисные платья <span>60</span></a>
+                    </li>
+                    <li id="bx_1847241719_469"><a href="/catalog/platya_999/">Платья 999 <span>135</span></a>
+                    </li>
+                    <li id="bx_1847241719_440"><a href="/catalog/platya_so_skidkoy/">Платья со скидкой <span>273</span></a>
+                    </li>
+                    <li id="bx_1847241719_435"><a href="/catalog/platya_maksi/">Платья-макси <span>18</span></a>
+                    </li>
+                    <li id="bx_1847241719_436"><a href="/catalog/platya_midi/">Платья-миди <span>32</span></a>
+                    </li>
+                    <li id="bx_1847241719_437"><a href="/catalog/platya_mini/">Платья-мини <span>341</span></a>
+                    </li>
+                    <li id="bx_1847241719_466"><a href="/catalog/platya_rubashki/">Платья-рубашки <span>60</span></a>
+                    </li>
+                    <li id="bx_1847241719_439"><a href="/catalog/povsednevnye_platya/">Повседневные платья <span>971</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li id="bx_1847241719_390"><a href="/catalog/bluzy/">Блузы <span>2967</span></a>
+                <ul class="dropdown-menu">
+                    <li id="bx_1847241719_443"><a href="/catalog/bluzy_bez_rukavov/">Блузы без рукавов <span>95</span></a>
+                    </li>
+                    <li id="bx_1847241719_445"><a href="/catalog/bluzy_s_bantom/">Блузы с бантом <span>2</span></a>
+                    </li>
+                    <li id="bx_1847241719_446"><a href="/catalog/bluzy_s_dlinnym_rukavom/">Блузы с длинным рукавом <span>215</span></a>
+                    </li>
+                    <li id="bx_1847241719_447"><a href="/catalog/bluzy_s_korotkim_rukavom/">Блузы с коротким рукавом <span>271</span></a>
+                    </li>
+                    <li id="bx_1847241719_448"><a href="/catalog/bluzy_s_otkrytymi_plechami/">Блузы с открытыми плечами <span>0</span></a>
+                    </li>
+                    <li id="bx_1847241719_449"><a href="/catalog/bluzy_s_ryushami_i_volanami/">Блузы с рюшами и воланами <span>0</span></a>
+                    </li>
+                    <li id="bx_1847241719_450"><a href="/catalog/bluzy_so_skidkoy/">Блузы со скидкой <span>227</span></a>
+                    </li>
+                    <li id="bx_1847241719_465"><a href="/catalog/bluzy_rubashki/">Блузы-рубашки <span>111</span></a>
+                    </li>
+                    <li id="bx_1847241719_444"><a href="/catalog/kruzhevnye_bluzy/">Кружевные блузы <span>0</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li id="bx_1847241719_402"><a href="/catalog/longslivy/">Лонгсливы <span>373</span></a>
+            </li>
+            <li id="bx_1847241719_395"><a href="/catalog/dzhempera/">Джемпера <span>920</span></a>
+            </li>
+            <li id="bx_1847241719_394"><a href="/catalog/vodolazki/">Водолазки <span>510</span></a>
+            </li>
+            <li id="bx_1847241719_408"><a href="/catalog/svitshoty/">Свитшоты <span>131</span></a>
+            </li>
+            <li id="bx_1847241719_409"><a href="/catalog/tuniki/">Туники <span>149</span></a>
+            </li>
+            <li id="bx_1847241719_398"><a href="/catalog/zhilety/">Жилеты <span>98</span></a>
+            </li>
+            <li id="bx_1847241719_397"><a href="/catalog/zhakety/">Жакеты <span>262</span></a>
+            </li>
+            <li id="bx_1847241719_405"><a href="/catalog/pidzhaki/">Пиджаки <span>176</span></a>
+            </li>
+            <li id="bx_1847241719_399"><a href="/catalog/kardigany/">Кардиганы <span>156</span></a>
+            </li>
+            <li id="bx_1847241719_464"><a href="/catalog/bluzy_futbolki/">Блузы - футболки <span>420</span></a>
+            </li>
+            <li id="bx_1847241719_401"><a href="/catalog/kurtki_polupalto/">Куртки, полупальто <span>55</span></a>
+            </li>
+            <li id="bx_1847241719_472"><a href="/catalog/plyazhnoe/">Пляжное <span>0</span></a>
+            </li>
+            <li id="bx_1847241719_410"><a href="/catalog/yubki/">Юбки <span>443</span></a>
+                <ul class="dropdown-menu">
+                    <li id="bx_1847241719_460"><a href="/catalog/pryamye_yubki/">Прямые юбки <span>0</span></a>
+                    </li>
+                    <li id="bx_1847241719_461"><a href="/catalog/uzkie_yubki/">Узкие юбки <span>0</span></a>
+                    </li>
+                    <li id="bx_1847241719_462"><a href="/catalog/shirokie_yubki/">Широкие юбки <span>0</span></a>
+                    </li>
+                    <li id="bx_1847241719_458"><a href="/catalog/yubka_midi/">Юбка-миди <span>95</span></a>
+                    </li>
+                    <li id="bx_1847241719_457"><a href="/catalog/yubki_maksi/">Юбки-макси <span>20</span></a>
+                    </li>
+                    <li id="bx_1847241719_459"><a href="/catalog/yubki_mini/">Юбки-мини <span>101</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li id="bx_1847241719_393"><a href="/catalog/bryuki/">Брюки <span>570</span></a>
+                <ul class="dropdown-menu">
+                    <li id="bx_1847241719_454"><a href="/catalog/bryuki_s_vysokoy_taliey/">Брюки с высокой талией <span>0</span></a>
+                    </li>
+                    <li id="bx_1847241719_456"><a href="/catalog/bryuki_so_skidkoy/">Брюки со скидкой <span>58</span></a>
+                    </li>
+                    <li id="bx_1847241719_451"><a href="/catalog/zauzhennye_bryuki/">Зауженные брюки <span>0</span></a>
+                    </li>
+                    <li id="bx_1847241719_452"><a href="/catalog/klassicheskie_bryuki/">Классические брюки <span>0</span></a>
+                    </li>
+                    <li id="bx_1847241719_453"><a href="/catalog/pryamye_bryuki/">Прямые брюки <span>0</span></a>
+                    </li>
+                    <li id="bx_1847241719_455"><a href="/catalog/shirokie_i_raskleshennye_bryuki/">Широкие и расклешенные брюки <span>0</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li id="bx_1847241719_396"><a href="/catalog/dzhinsy/">Джинсы <span>103</span></a>
+            </li>
+            <li id="bx_1847241719_403"><a href="/catalog/losiny/">Лосины <span>21</span></a>
+            </li>
+            <li id="bx_1847241719_381"><a href="/catalog/shorty/">Шорты <span>12</span></a>
+            </li>
+            <li id="bx_1847241719_463"><a href="/catalog/futbolki/">Футболки <span>0</span></a>
+            </li>
+            <li id="bx_1847241719_389"><a href="/catalog/shlyapki/">Шляпки <span>27</span></a>
+            </li>
+            <li id="bx_1847241719_404"><a href="/catalog/mayki_topy/">Майки <span>317</span></a>
+            </li>
+            <li id="bx_1847241719_467"><a href="/catalog/topy/">Топы <span>145</span></a>
+            </li>
+            <li id="bx_1847241719_400"><a href="/catalog/kombinezony/">Комбинезоны <span>35</span></a>
+            </li>
+            <li id="bx_1847241719_392"><a href="/catalog/bolero/">Болеро <span>47</span></a>
+            </li>
+            <li id="bx_1847241719_382"><a href="/catalog/aksessuary/">Аксессуары2 <span>2278</span></a>
+                <ul class="dropdown-menu">
+                    <li id="bx_1847241719_383"><a href="/catalog/bizhuteriya/">Бижутерия <span>632</span></a>
+                        <ul class="dropdown-menu">
+                            <li id="bx_1847241719_384"><a href="/catalog/zonty/">Зонты888 <span>35</span></a>
+                        </ul>
+                    </li>
+                    <li id="bx_1847241719_384"><a href="/catalog/zonty/">Зонты <span>35</span></a>
+                    </li>
+                    <li id="bx_1847241719_385"><a href="/catalog/platki_kosynki/">Платки, косынки <span>152</span></a>
+                    </li>
+                    <li id="bx_1847241719_386"><a href="/catalog/remni/">Ремни <span>336</span></a>
+                    </li>
+                    <li id="bx_1847241719_387"><a href="/catalog/sumki_ryukzaki/">Сумки, рюкзаки <span>669</span></a>
+                    </li>
+                    <li id="bx_1847241719_388"><a href="/catalog/sharfy_palantiny/">Шарфы, палантины <span>450</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li id="bx_1847241719_470"><a href="/catalog/plyazhnyy_otdykh/">Пляжный отдых <span>9</span></a>
+            </li>
+        </ul>
+
+    </nav>
 </div>
 
-
 <footer>
-    <div class="footer">
+    <div class="footer" id="footer">
         <div class="footer_menu">
             <ul>
                 <li><a href="">О компании</a></li>
@@ -1371,32 +1627,39 @@
         speed:200
     });
 </script>
-<script src="js/owl.carousel.js" ></script>
-<script>
-    $(document).ready(function () {
-        $('.slider .owl-carousel').owlCarousel({
-            loop:true,
-            margin:0,
-            nav:true,
-            dots: true,
 
-
-            //navText: ['<','>'],
-            responsive:{
-                0:{
-                    items:1
-                },
-                480:{
-                    items:1
-                }
-            }
-        });
-
-    });
-</script>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
 <script src="/local/templates/.default/js/svg4everybody.js" ></script>
 <![endif]-->
+
+<!-- JS перед </body> -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const largeSlider = ()=>{
+        let largeSliders = document.querySelectorAll('.swiper')
+        let prevArrow = document.querySelectorAll('.swiper-button-prev')
+        let nextArrow = document.querySelectorAll('.swiper-button-next')
+        largeSliders.forEach((slider, index)=>{
+            // this bit checks if there's more than 1 slide, if there's only 1 it won't loop
+            let sliderLength = slider.children[0].children.length
+            let result = (sliderLength > 1) ? true : false
+            const swiper = new Swiper(slider, {
+                loop: result,
+                navigation: {
+                    // the 'index' bit below is just the order of the class in the queryselectorAll array, so the first one would be NextArrow[0] etc
+                    nextEl: nextArrow[index],
+                    prevEl: prevArrow[index],
+                },
+                pagination: {
+                    el: '.swiper .swiper-pagination',
+                    clickable: true,
+                },
+            });
+        })
+    }
+    window.addEventListener('load', largeSlider)
+</script>
+
 </body>
 </html>

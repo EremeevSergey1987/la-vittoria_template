@@ -5,10 +5,11 @@
   flex-direction: column;
 }
 
+
 .goods{
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(4, $product-width);
+  grid-template-columns: repeat(4, 24.9%);
   gap: 10px;
   padding:10px;
   h1, h2, p, h3{
@@ -35,8 +36,19 @@
       width: auto;
       top:10px;
       left: 10px;
-      z-index: 10;
+      z-index: 2;
       color: $top_menu_color;
+    }
+
+    .swiper{
+      .swiper-button-next, .swiper-button-prev{
+        color: #314f55;
+      }
+      .swiper-pagination{
+        .swiper-pagination-bullet-active{
+          background: #314f55;
+        }
+      }
     }
 
     .sizes{
@@ -46,6 +58,16 @@
     a{
       display: flex;
     }
+    .art{
+      //border: 1px solid  red;
+      height: 30px;
+      overflow: hidden;
+    }
+    .size{
+      //border: 1px solid  red;
+      height: 30px;
+      overflow: hidden;
+    }
     .price{
       font-family: "bahnschrift";
       font-size: 25px;
@@ -53,7 +75,7 @@
       width: 100%;
       line-height: 30px;
       color: $price-color;
-      margin: 5px 0 0 5px;
+      margin: 5px 0 0 0;
       span.through{
         text-decoration: line-through;
         font-size: 18px;
@@ -78,6 +100,10 @@
 
 }
 
+.goods.other_color{
+  grid-template-columns: repeat(6, 16.37%);
+}
+
 .wrap.content.text{
       p{
         margin:15px 0 20px 0;
@@ -91,7 +117,14 @@
 
 
 @media screen and (max-width: 1050px) {
+
+  .goods.other_color{
+    grid-template-columns: repeat(2, 50%);
+  }
+
   .goods{
+
+
     .item {
       .price{
         line-height: 30px;
@@ -109,6 +142,9 @@
 
 
 @media screen and (max-width: 938px) {
+  .goods.other_color{
+    grid-template-columns: repeat(3, 33.3%);
+  }
   .first{
     .item{
       flex-basis: 49%;
@@ -126,6 +162,9 @@
   }
 }
 @media screen and (max-width: 556px) {
+  .goods.other_color{
+    grid-template-columns: repeat(1, 100%);
+  }
   .goods {
     grid-template-columns: repeat(2, $product-width-small);
   }
