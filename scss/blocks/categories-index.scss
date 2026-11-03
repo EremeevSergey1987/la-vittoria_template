@@ -11,11 +11,12 @@
     li{
       a{
         background-color: $gray;
-        line-height: 18px;
+        line-height: 40px;
         padding: 5px 0 5px 8px;
         margin: 0 15px 20px 0;
+        text-decoration: none;
         span{
-          padding: 8px 8px;
+          padding: 8px 7px 7px;
           font-size: 12px;
           color: white;
           background-color: $site-color;
